@@ -1,7 +1,14 @@
+body {
+  background-image: url(http://www.zastavki.com/pictures/originals/2015/World___Iceland_Harsh_landscape_in_Iceland_096012_.jpg)
+
+}
+
 .App {
   text-align: center;
   font-size: 30px;
+  color: #fff;
   margin-top: 15%;
+  text-shadow: 2px 2px 5px rgba(070, 070, 070, 0.3); 
 }
 
 .App-title {
