@@ -26,10 +26,10 @@ class Clock extends Component {
 
   getTimeUntil(deadline) {
     const time = Date.parse(deadline) - Date.parse(new Date());
-    const seconds = Math.floor((time/1000) % 60);
-    const minutes = Math.floor((time/1000/60) % 60);
-    const hours = Math.floor((time/(3600000)) % 24);
-    const days = Math.floor(time/(86400000));
+    const seconds = this.leadingZero(Math.floor((time/1000) % 60));
+    const minutes = this.leadingZero(Math.floor((time/1000/60) % 60));
+    const hours = this.leadingZero(Math.floor((time/(3600000)) % 24));
+    const days = this.leadingZero(Math.floor(time/(86400000)));
 
     this.setState({
       days: days,
