@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     return(
       <div className='App'>
-        <div className='App-title'>Countdown to { this.state.deadline }</div>
+        <div className='App-title'>Time until { this.state.deadline }</div>
         <div>
           <Clock
             deadline={ this.state.deadline }
